@@ -1,0 +1,29 @@
+
+
+<owl-carousel-o [options]="customOptions">
+  @for (item of categorys; track $index) {
+    <ng-template carouselSlide>
+      <div class="p-2 flex justify-between items-center mt-20 gap-4">
+        <div class="bg-[#FEEDF7] border border-white px-1 py-4 flex flex-row items-center gap-4 rounded-xl shadow-md w-full max-w-xs">
+
+          <!-- الصورة -->
+          <div class="w-[90px] bg-white h-[90px] px-5 py-5 overflow-hidden rounded-full border border-white">
+            <img 
+              class=" object-cover"
+              [src]="item.image"
+              [alt]="item.name"
+            />
+          </div>
+
+          <!-- النص -->
+          <div class="flex flex-col justify-center">
+            <h2 class="text-base font-semibold text-gray-800">{{ item.name.split(' ', 1).join(' ') }}</h2>
+            <h2 class="text-sm text-gray-500">{{ item.productsCount }} </h2>
+          </div>
+
+        </div>
+      </div>
+    </ng-template>
+  }
+</owl-carousel-o>
+

@@ -1,0 +1,101 @@
+
+
+
+   <nav
+  [class.p-2]="scroll"
+  class="bg-white shadow-sm border-gray-200  fixed top-0 left-0 right-0 z-50"
+>
+  <div
+    class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4 py-2"
+  >
+    <a href="">
+     
+        <img src="/images/logo.png" class="w-[50px]" alt="">
+    </a>
+    <button
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-transparent dark:focus:ring-gray-600"
+      (click)="toggleMenu()"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"
+        />
+      </svg>
+    </button>
+    <div
+      [class.hidden]="!menuOpen"
+      class="hidden w-full flex-grow pt-2 ps-2 md:flex md:w-auto"
+      id="navbar-default"
+    >
+    
+      <ul
+        class="text-lg capitalize flex flex-col md:p-0  md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0  "
+      >
+           <li>
+                    <a   class="block  text-[#F82BA9] py-2 px-3 ms-4  font-bold text-[14px]  " aria-current="page"> Home 
+                        </a>
+                  </li>
+                <li>
+                    <a    class="block  text-[#160E4B] font-bold   py-2 px-3 ms-4  text-[14px]  " aria-current="page"> AllCategory 
+                        </a>
+                  </li>
+                <li>
+                    <a 
+               
+                     class="block  text-[#160E4B] font-bold  py-2 px-3  ms-4 text-[14px] " aria-current="page"> About 
+                        </a>
+                  </li>
+                <li>
+                    <a class="block  text-[#160E4B] font-bold  py-2 px-3 ms-4  text-[14px] " aria-current="page"> Contact
+                        </a>
+                  </li>
+               
+                  
+         
+          
+      </ul>
+      
+      <ul
+        class="font-weight-bold ms-auto text-lg capitalize flex flex-col md:p-0 rounded-lg  md:flex-row md:space-x-2 rtl:space-x-reverse md:mt-0 md:border-0 "
+      >
+    
+          <li>
+                    <a   class="block py-2  ms-4 px-3 text-[#F82BA9]   " aria-current="page">
+        
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </li>
+                <li>
+                    <a class="block py-2 ms-4  px-3 text-[#F82BA9]    " aria-current="page">  
+                        <i class="fa-solid fa-bag-shopping"></i>
+                     </a>
+                  </li>
+                  
+       
+                  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+ 
+ 
+
+  
+  
