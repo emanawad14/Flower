@@ -1,0 +1,75 @@
+
+section{
+    background-image: url('/images/Birthday\ background.png');
+    min-height: 70vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item{
+    background-color: white;
+ max-width: 302px;
+    height: 344px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.line
+{
+    width: 254px;
+    border: 1px solid #757F95;
+   
+    
+}
+.para
+{
+ max-width: 254px;
+    height: 119px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #757F95;
+}
+
+.yasimin {
+  position: relative;
+  background-color: transparent; /* نخليها شفافة */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; /* مهم */
+}
+.TextH h1
+{
+    color: #160E4B;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+.TextH h2
+{
+     color: #F82BA9;
+    font-size: 17px;
+    font-weight: 700;
+
+}
+
+.yasimin::before {
+  content: '';
+  position: absolute;
+  left: 0;
+ bottom: 0;
+  width: 80%;
+  height: 80%; /* نصف الدائرة من الأعلى */
+  background-color: #F82BA9;
+  z-index: 0;
+}
+
+.yasimin img {
+  position: relative;
+  z-index: 1; /* عشان تظهر الصورة فوق الخلفية */
+}
