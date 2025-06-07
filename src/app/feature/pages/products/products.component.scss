@@ -1,0 +1,37 @@
+
+section h1
+{
+    font-size: 30px;
+    font-weight: 700;
+     font-family: "Inter", sans-serif;
+     color: #160E4B;
+}
+
+.bag {
+  background-color: #8C52FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 21px;
+}
+
+.imgcover {
+  width: 302px;
+  height: 272px;
+  border-radius: 20px;
+  background-color: #FEEDF7;
+  padding: 20px 20px 30px 20px;
+}
+
+.title {
+  color: #160E4B;
+  font-weight: 700;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+}
+
+.bag i {
+  color: white;
+}

@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, Input, OnInit } from '@angular/core';
 import { CategoryService } from '../../services/category/category.service';
 import { ICategory } from '../../interfaces/category/icategory';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
@@ -11,7 +11,7 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class CategoryComponent implements OnInit {
 
-  categorys:ICategory[]=[]
+  @Input() categorys:ICategory[]=[]
   private readonly categoryService=inject(CategoryService);
 
   ngOnInit(): void {
